@@ -17,7 +17,7 @@ function checkTheTriangle() {
   
   if(angleA+angleB+angleC == 180) {
     if(lengthA == lengthC == lengthB) {
-      document.getElementById("Answer").innerHTML = "This triangle is equilateral triangle triangle"
+      document.getElementById("Answer").innerHTML = "This triangle is equilateral triangle"
     }else if(lengthA == lengthB || lengthB == lengthC || lengthA == lengthC) {
       document.getElementById("Answer").innerHTML = "This triangle is isosceles triangle"
     }else {
