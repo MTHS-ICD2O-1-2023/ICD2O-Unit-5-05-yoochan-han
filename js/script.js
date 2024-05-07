@@ -7,7 +7,6 @@ function checkTheTriangle() {
   const lengthA = document.getElementById("get-lengthA").value
   const lengthB = document.getElementById("get-lengthB").value
   const lengthC = document.getElementById("get-lengthC").value
-  const lengthPack = [lengthA, lengthB, lengthC]
 
   // using the cosine law
   const angleA = Math.acos((lengthB ** 2 + lengthC ** 2 - lengthA ** 2) / (2 * lengthB * lengthC)) * (180 / Math.PI)
@@ -24,5 +23,7 @@ function checkTheTriangle() {
     }else {
       document.getElementById("Answer").innerHTML = "This triangle is scalene triangle"
     }
-  }
-} 
+  }else {
+  document.getElementById("Answer").innerHTML = "This is not a triangle"
+}
+}
