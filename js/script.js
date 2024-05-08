@@ -16,7 +16,7 @@ function checkTheTriangle() {
   const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
   
   if (sumOfAngles == 180) {
-    if(lengthA == lengthC == lengthB) {
+    if (lengthA == lengthB && lengthB == lengthC && lengthA == lengthC) {
       document.getElementById("Answer").innerHTML = "This triangle is equilateral triangle"
     }else if(lengthA == lengthB || lengthB == lengthC || lengthA == lengthC) {
       document.getElementById("Answer").innerHTML = "This triangle is isosceles triangle"
@@ -25,5 +25,6 @@ function checkTheTriangle() {
     }
   }else {
     document.getElementById("Answer").innerHTML = "This is not a triangle"
+    alert(sumOfAngles)
 }
 }
