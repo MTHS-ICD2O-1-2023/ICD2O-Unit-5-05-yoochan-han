@@ -15,7 +15,7 @@ function checkTheTriangle() {
 
   const sumOfAngles = Number((angleA).toFixed(2)) + Number((angleB).toFixed(2)) + Number((angleC).toFixed(2))
   
-  if(angleA+angleB+angleC == 180) {
+  if (sumOfAngles == 180) {
     if(lengthA == lengthC == lengthB) {
       document.getElementById("Answer").innerHTML = "This triangle is equilateral triangle"
     }else if(lengthA == lengthB || lengthB == lengthC || lengthA == lengthC) {
@@ -24,6 +24,6 @@ function checkTheTriangle() {
       document.getElementById("Answer").innerHTML = "This triangle is scalene triangle"
     }
   }else {
-  document.getElementById("Answer").innerHTML = "This is not a triangle"
+    document.getElementById("Answer").innerHTML = "This is not a triangle"
 }
 }
